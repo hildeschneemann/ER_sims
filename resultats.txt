@@ -1,0 +1,346 @@
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.001, U_c = 0.1, U_t = 0.001, Rg = 10, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.001, U_c = 0.1, U_t = 0.001, Rg = 10, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.001, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.001, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.1, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.01, U_t = 0.01, Rg = 1, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.05, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 1, pas = 1, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 1, Rc = 0.0001, output = 1, p = 100
+1 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.05, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.1, U_g = 0.1, U_c = 0.1, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 100
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.1, U_g = 0.01, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 10
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.1, U_g = 0.01, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 10
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.5, U_g = 0.01, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 10
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.5, U_g = 0.01, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 10
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 20
+generations = 100, pas = 10, s = 0.1, s_max = 0.3, s = 0.5, U_g = 0.01, U_c = 0.01, U_t = 0.01, Rg = 10, Rc = 0.0001, output = 1, p = 10
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 20
+generations = 1000, pas = 100, s = 0.1, s_max = 0.3, s = 0.5, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, p = 10
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 20
+generations = 1000, pas = 100, s = 0.1, s_max = 0.3, s = 0.5, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 100, s = 0.01, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 10, s = 0.01, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 1 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, sigma = 0.2, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 1 seconds
+
+_________________________________________
+
+N = 100, nbS = 0
+generations = 2130967168, pas = 300419261, s = 0.2, s_max = 100, s = 1000, U_g = 10, U_c = 0.1, U_t = 0.3, Rg = 0.3, Rc = 0.001, output = -2134115219, sdopt = 0.001, steep = 0.001
+_________________________________________
+
+N = 100, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.3, s = 0.3, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 1 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 1000, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+1000 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, nbS = 10
+generations = 100, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 10, nbS = 10
+generations = 100, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 0 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 10, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 1 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 2 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 3 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 2 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.9, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 3
+100 generations took 0 hour(s) 0 minute(s) 2 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.1, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 0.1
+100 generations took 0 hour(s) 0 minute(s) 3 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.1, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 0.1
+100 generations took 0 hour(s) 0 minute(s) 3 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.1, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 0.1
+100 generations took 0 hour(s) 0 minute(s) 3 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.1, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 0.1
+100 generations took 0 hour(s) 0 minute(s) 2 seconds
+
+_________________________________________
+
+N = 100, nbS = 100
+generations = 100, pas = 1, s = 0.1, s_max = 0.4, s = 0.1, U_g = 0.001, U_c = 0.001, U_t = 0.001, Rg = 10, Rc = 0.0001, output = 1, sdopt = 1, steep = 0.1
+100 generations took 0 hour(s) 0 minute(s) 2 seconds

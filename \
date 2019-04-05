@@ -1,0 +1,275 @@
+#include "mutation.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <ctime>
+#include <climits>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+extern MTRand rnd; // random number generator
+extern FILE * fichierS; // output file
+
+
+/*----------------------------------------------------------
+Function recursion: iterates the life cycle.
+Parameters are:
+Nv: population size (nb of haploid organisms)
+sigv: std deviation of distribution of mutational effects
+nbSv: number of selected loci (affecting the phenotype) per genome; equal to number of cistronic regulators
+NbGenv: number of generations
+pasv: time interval between measurements
+s: mutational effect (mean) on allele
+I: intensity of stabilizing selection
+U_g: mutation rate for genes
+U_c: mutation rate for cis regulators
+U_t: trans effect
+Rg: number of sites between cis-regulator and gene
+Rc: genetic distance between a cis-regulator and its regulated gene !!! RECOMBINATION FUNCTION ONLY VALID FOR Rc < Rg !!!!
+ output: 0 if all loci recorded
+pv: number of free transcription factors
+-----------------------------------------------------------*/
+
+
+
+void recursion(int Nv, double sigv, int nbSv, int NbGenv, int pasv, double s, double s_max, double I, double U_g, double U_c, double U_t, double Rg, double Rc, int Rep, int output, double** allAverages, int pv)
+{
+
+	int i, j, k, nm, gen, mut, p1, p2, indiv, site, chrom, off_sex;
+	double w, wmmax, wfmax, h, dg, dc, dt, varm;
+
+	double h0 = 0.25;
+    double Q0 = 2;
+    int N_1 = Nv - 1;
+    int nbSm1 = nbSv - 1;
+    int twonbSm1 = 2 * nbSv - 1;
+    double MLength = Rc * (nbSv + Rg);
+    double UgTot = 2*Nv*U_g*nbSv;
+    double UcTot = 2*Nv*U_c*nbSv;
+    double UtTot = 2*Nv*U_t*nbSv;
+    double expdom = -log(h0) / log(2.0);
+
+    // creates result file (with parameter values in file name):
+    char nomFichier[256];
+    stringstream nomF;
+    nomF << "N" << Nv << "_nbS" << nbSv << "_s" << s << "_I" << I << "_sig" << sigv << "_Ug" << U_g << "_Uc" << U_c << "_Ut" << U_t<< "_Rg" << Rg << "_Rc" << Rc << "_Rep" << Rep << ".txt"; // results file naming convention
+    nomF >> nomFichier; // Writing "nomF" to nomFichier file
+    ofstream fout;
+    fout.open(nomFichier);
+
+	fout << "gen\twbar\tmeanmatch\thomfreq\thetfreq\n";
+
+	// population of N haploid individuals:
+	ind * pop = new ind [Nv]; // "pop" chr pointer refers to a chr type (see "mutation.h") with Nv dimensions; "chr" has "gene", "cis", "trans", "sex" array
+	ind * temp = new ind [Nv]; // temp for saving current generation during recombination
+    ind * pc; // for recombination
+
+    // array for measures from population: for each locus: sbarX, sbarY, hY, hXinact, attractXmale, attractXAct, attractXInact, attractY, dosY, dosXmale, dosXAct, dosXInact
+
+    double ** measures;
+    double * popAverages;
+    if (output == 0)
+    {
+        measures = new double *[nbSv];
+        for(i = 0; i < nbSv; i++)
+            measures[i] = new double[7];
+        popAverages = new double [2];
+    }
+    else
+    {
+        popAverages = new double [4];
+    }
+
+	// fitnesses:
+
+	double * Wtot = new double [Nv]; // creates a new double pointer "Wtot" with dimension Nv -- each individual has a fitness!
+
+	// for time length measure:
+
+	time_t debut, fin; // "time_t" declares a time-calendar type; Debut-start, Fin-End
+	struct tm *ptr; // sets "ptr" as a * for tm
+	debut = time(0); // sets debut time to calendar time (not important)
+
+    // initialization:
+
+	for (i = 0; i < Nv; i++) // Loop through [Nv] times iterating over i (over each individual in the population)
+    {
+        // GENES
+        pop[i].gene = new double [2];// two chromosomes
+        temp[i].gene = new double [2];
+
+        // CIS regulators
+        pop[i].cis = new double [2*nbSv]; // two chromosomes
+        temp[i].cis = new double [2*nbSv];
+
+        // TRANS regulators
+        pop[i].trans = new double [2*nbSv]; // two chromosomes, trans reg's  corresponding to each gene
+        temp[i].trans = new double [2*nbSv];
+
+        pop[i].gene[0] = 1; // initialize all genes with 1 (WT/good) allele for Chromosome #1
+		pop[i].gene[1] = 1; // same for Chromosome #2
+			
+        for (k = 0; k < nbSv; k++)
+        {
+            pop[i].cis[k] = 1; // initialize all cis regulators
+            pop[i].cis[nbSv+k] = 1; // same for Chromosome #2
+            pop[i].trans[k] = 1; // initialize all trans  regulators
+            pop[i].trans[nbSv+k] = 1; // same for Chromosome #2
+         }
+
+    }
+
+  	// generations:
+	for (gen = 0; gen <= NbGenv; gen++) // Iterates over all generations
+	{
+		cout << "starting first gen\n";
+        // Draw mutations:
+
+        // Gene mutations
+        mut = int(poisdev(UgTot)); // 2NuL number of expected mutations in total population
+
+        for (nm = 0; nm < mut; nm++) // iterates over number of muts
+        {
+            indiv = rnd.randInt(N_1); // selects random individual; "rnd" in "MersenneTwister.h"
+            site = rnd.randInt(1); // selects random loci
+
+            // draw mutational effect on fitness from exp distribution
+            dg = s * (-log(rnd.rand())); // DISTRIBUTIONAL: Draw from exp dist of mean s, lambda = 1/s
+//            dg = s; // CONSTANT: -s fitness mutation
+
+             // For a set s_max limit
+            if (pop[indiv].gene[site] * (1 - dg) >= 1-s_max)
+                pop[indiv].gene[site] *= (1 - dg);
+            else
+                pop[indiv].gene[site] = 1-s_max; // sets floor to 1-s_max
+        }
+
+        // Cis mutations
+        mut = int(poisdev(UcTot)); // 2NuL number of expected mutations in total population
+        for (nm = 0; nm < mut; nm++)
+        {
+            indiv = rnd.randInt(N_1);
+            site = rnd.randInt(twonbSm1);
+
+            pop[indiv].cis[site] = (pop[indiv].cis[site] ? 0 : 1);
+			
+        }
+
+        // Trans mutations
+        mut = int(poisdev(UtTot)); // 2NuL number of expected mutations in total population
+        for (nm = 0; nm < mut; nm++)
+        {
+            indiv = rnd.randInt(N_1);
+            site = rnd.randInt(twonbSm1);
+
+            pop[indiv].trans[site] = (pop[indiv].trans[site] ? 0 : 1);
+        }
+
+
+        wmmax = 0;
+        for (i = 0; i < Nv; i++) // Loops through each indvidual in the population
+        {
+            w = getfitness(pop[i], expdom, s_max, Q0, I, nbSv, pv);
+            Wtot[i] = w;
+            if (wmmax < w)
+                wmmax = w;
+        }
+	cout << "finished mutation part\n";
+        // measures phenotypic moments and writes in result file every "pasv" generations:
+
+
+        if (gen % pasv == 0) // "gen" is the generational index (iterable) and once it reaches a multiple of the time interval per generation "pasv", write results
+        {
+            if (output == 0)
+            {
+                //record_output(pop, Wtot, measures, popAverages, nbSv, Nv, expdom);
+
+                fout << gen << " " << popAverages[0] << " " << popAverages[1] << " " ;
+                for (j = 0; j < nbSv; j++)
+                    for (i = 0; i < 7; i++)
+                        fout << measures[j][i] << " ";
+                fout << endl;
+            }
+            else
+            {
+                record_averages_seq(pop, Wtot, popAverages, nbSv, Nv, expdom, s_max, pv);
+
+                fout << gen << " ";
+                for (i = 0; i < 4; i++)
+                {
+                    fout << popAverages[i] << "\t";
+                    allAverages[gen/pasv][i] = ((allAverages[gen/pasv][i])*Rep + popAverages[i]) / (Rep+1);
+                }
+                fout << endl;
+            }
+        }
+
+	cout << "finished writing results after pas generations\n";
+        // next generation (meiosis):
+		for (j = 0; j < Nv; j++)
+		{
+            do{
+				p1 = rnd.randInt(N_1); // select random parent 1
+
+			} while (rnd.rand() > (Wtot[p1] / wmmax));
+            // second parent:
+
+			do{
+                p2 = rnd.randInt(N_1); // select random parent 2
+
+            } while (rnd.rand() > (Wtot[p2] / wfmax) | p1 == p2);
+
+            // recombination:
+			rec(temp[j], pop[p1], pop[p2], Rg, Rc, MLength, nbSv);
+		}
+	cout << "finished meiosis\n";
+        // update population:
+
+        pc = pop;
+        pop = temp;
+        temp = pc;
+
+	}
+
+    fin = time(0); // NOT IMPORTANT (C function for getting the calendar time to write to the results file
+
+    // writes in output file:
+
+    //fprintf(fichierS, "\n\nResults in file ");
+    //fprintf(fichierS, nomFichier);
+    //fprintf(fichierS, "\n");
+
+    // time length:
+
+    int temps = int(difftime(fin, debut));
+    fprintf(fichierS, "\n%d generations took %d hour(s) %d minute(s) %d seconds\n", NbGenv, temps / 3600, (temps % 3600) / 60, temps % 60);
+
+    // date and time:
+
+    //ptr=localtime(&fin); //  & = address of; localtime(&fin) gives the corresponding time zone time for "fin"
+    //fprintf(fichierS, asctime(ptr)); // ERIC: prints asctime(ptr) to the FILE stream with pointer fichierS; asctime(time) gives "time" in human-readable format
+
+	// FREES MEMORY AFTER RUNNING
+    for (i = 0; i < Nv; i++)
+    {
+        // delete [] "pointer" deletes/frees the array memory for the given pointer
+        delete [] pop[i].gene;
+        delete [] temp[i].gene;
+        delete [] pop[i].trans;
+        delete [] temp[i].trans;
+        delete [] pop[i].cis;
+        delete [] temp[i].cis;
+    }
+	delete [] pop;
+    delete [] temp;
+    delete [] Wtot;
+    if (output == 0)
+    {
+        for(i = 0; i < nbSv; i++)
+            delete [] measures[i];
+        delete [] measures;
+    }
+    delete [] popAverages;
+}

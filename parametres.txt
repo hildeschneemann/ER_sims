@@ -1,0 +1,7 @@
+N nbS NbGen pas s s_max I Ug Uc Ut Rg Rc Rep output sdopt steep
+
+
+* 100 100 100 1 0.1 0.4 0.1 0.001 0.001 0.001 10 0.0001 1 1 1 0.1
+
+
+
